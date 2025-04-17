@@ -1,0 +1,19 @@
+---
+# make sure your repo is react app or next.js app , 
+# then run the playbook with the role name as a variable
+# example: ansible-playbook site.yml -e 
+# selected_role=deploy_next.js_app or selected_role=deploy_react_app
+
+
+app_repo_url: "https://github.com/edensitko/portfolio.git"
+image_name: "app-eden"
+container_name: "app-eden"
+
+# for react app
+docker_container_port: 80
+
+# for next.js app
+# docker_container_port: 3000
+
+docker_host_port: 8080
+

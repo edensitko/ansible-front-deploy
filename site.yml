@@ -1,0 +1,14 @@
+- name: Deploy Selected App Role
+  hosts: all
+  become: yes
+  vars_files:
+    - vars.yml
+
+  vars:
+    selected_role: deploy_react_app
+  # selected_role: deploy_next.js_app
+
+  tasks:
+    - name: Run the chosen application role
+      include_role:
+        name: "{{ selected_role }}"
