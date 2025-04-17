@@ -59,8 +59,8 @@ project-root/
    container_name: "my-app-container"
 
    # Container port (React → 80, Next.js → 3000)
-   docker_container_port: 80      # for React
-   # docker_container_port: 3000  # uncomment for Next.js
+   docker_container_port: 80      
+   # docker_container_port: 3000 
 
    # Host port to expose
    docker_host_port: 8080
@@ -90,6 +90,4 @@ project-root/
 - **Secure**: avoid hardcoding credentials; use Ansible Vault or environment variables.
 - **Extend**: customize NGINX configuration or Node command by editing the `Dockerfile.j2` template.
 
-
-# ansible-react-next-deploy
-# ansible-react-next-deploy
+# ansible-front-deploy

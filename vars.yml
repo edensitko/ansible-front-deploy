@@ -4,10 +4,9 @@
 # example: ansible-playbook site.yml -e 
 # selected_role=deploy_next.js_app or selected_role=deploy_react_app
 
-
-app_repo_url: "https://github.com/edensitko/portfolio.git"
-image_name: "app-eden"
-container_name: "app-eden"
+app_repo_url: "https://github.com/<your_github_username>/<your_repo_name>.git"
+image_name: "app"
+container_name: "app"
 
 # for react app
 docker_container_port: 80
